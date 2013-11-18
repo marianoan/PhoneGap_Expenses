@@ -27,10 +27,10 @@
 
     this.changePicture = function (event) {
         event.preventDefault();
-        /*if (!navigator.camera) {
+        if (!navigator.camera) {
             app.showAlert("Camera API not supported", "Error");
             return;
-        }*/
+        }
         var options = {
             quality: 50,
             destinationType: Camera.DestinationType.DATA_URL,
